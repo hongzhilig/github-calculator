@@ -1,9 +1,9 @@
-name: Docker Workflow
-on:
-  push:
-    paths:
-      - '**.java'
-    workflow_dispatch:
+  name: Docker Workflow
+  on:
+    push:
+      paths:
+        - '**.java'
+      workflow_dispatch:
 
   jobs:
     build_Docker_image:
@@ -13,4 +13,3 @@ on:
   steps:
     - name: Echo Test
       run: echo This is a test
-
